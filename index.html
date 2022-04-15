@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+</head>
+<body>
+    <h1>Guess the Number!</h1>
+    <p>I am thinking of a number between 1 and 10. Can you guess what it is?</p>
+    <form action="">
+        <input type=button onclick="window.location.reload()" value="Try again">
+    </form>
+</body>
+<script>
+    const randomNumber = Math.floor(Math.random() * 10) 
+      let guess = prompt("Guess any number from 0 to 10")
+
+      if(guess){
+          if(guess == randomNumber){
+              alert("true. " + "Good! you guess the system choice of" + guess)
+          } else {
+              alert("false" + "-:failed to guess the correct number of " + randomNumber)
+          }
+      }
+      </script>
+</html>
